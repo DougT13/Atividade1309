@@ -3,17 +3,17 @@ package br.com.etecia.atividade1309;
 public class Cafe {
     private String titulo;
     private String descricao;
-    private int imgCafe;
+    private int Cafe;
 
 
     public Cafe(){
 
     }
 
-    public Cafe(String titulo,String descricao,int imgcafe){
+    public Cafe(String titulo,String descricao,int Cafe){
         this.titulo = titulo;
         this.descricao = descricao;
-        this.imgCafe = imgCafe;
+        this.Cafe = Cafe;
     }
 
     public String getTitulo() {
@@ -33,10 +33,10 @@ public class Cafe {
     }
 
     public int getImgCafe() {
-        return imgCafe;
+        return Cafe;
     }
 
     public void setImgCafe(int imgCafe) {
-        this.imgCafe = imgCafe;
+        this.Cafe = imgCafe;
     }
 }
