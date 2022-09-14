@@ -1,94 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idCardCafe"
     android:layout_width="165dp"
     android:layout_height="300dp"
     android:layout_marginStart="15dp"
     android:layout_marginTop="10dp"
     android:layout_marginEnd="15dp">
 
-    <androidx.cardview.widget.CardView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Café Expresso"
+            android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/txtCafe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:text="Café Expresso"
-                android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/imgCafe"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/txtCafe"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cafeexpresso" />
 
-            <ImageView
-                android:id="@+id/imgCafe"
-                android:layout_width="200dp"
-                android:layout_height="150dp"
-                android:layout_below="@+id/txtCafe"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/cafeexpresso" />
+        <TextView
+            android:id="@+id/txtDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCafe"
+            android:layout_alignStart="@+id/imgCafe"
+            android:layout_marginTop="10dp"
+            android:text="Descrição"
+            android:textSize="15dp" />
 
-            <TextView
-                android:id="@+id/txtDescricao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imgCafe"
-                android:layout_alignStart="@+id/imgCafe"
-                android:layout_marginTop="10dp"
-                android:text="Descrição"
-                android:textSize="15dp" />
+        <TextView
+            android:id="@+id/txtDescrever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescricao"
+            android:layout_alignStart="@+id/imgCafe"
+            android:layout_marginTop="10dp"
+            android:text="Bom café"
+            android:textSize="15dp" />
 
-            <TextView
-                android:id="@+id/txtDescrever"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txtDescricao"
-                android:layout_alignStart="@+id/imgCafe"
-                android:layout_marginTop="10dp"
-                android:text="Bom café"
-                android:textSize="15dp" />
+        <ImageView
+            android:id="@+id/imgEstrela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescrever"
+            android:layout_alignStart="@+id/txtDescrever"
+            android:src="@drawable/ic_baseline_star" />
 
-            <ImageView
-                android:id="@+id/imgEstrela"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txtDescrever"
-                android:layout_alignStart="@+id/txtDescrever"
-                android:src="@drawable/ic_baseline_star" />
+        <TextView
+            android:id="@+id/txtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescrever"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:text="4.5"
+            android:textColor="@color/black" />
 
-            <TextView
-                android:id="@+id/txtRating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txtDescrever"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="35dp"
-                android:text="4.5"
-                android:textColor="@color/black" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDescrever"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_baseline_favorite" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/txtDescrever"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="40dp"
-                android:src="@drawable/ic_baseline_favorite" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/txtDescrever"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_share" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDescrever"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_share" />
 
 
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
