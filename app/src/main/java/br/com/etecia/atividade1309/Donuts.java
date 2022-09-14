@@ -4,18 +4,18 @@ public class Donuts {
     private String titulo;
     private String descricao;
     private String avaliacao;
-    private int Cafe;
+    private int imgCafe;
 
 
     public Donuts(){
 
     }
 
-    public Donuts(String titulo,String descricao, String avaliacao,int Cafe){
+    public Donuts(String titulo,String descricao, String avaliacao,int imgCafe){
         this.titulo = titulo;
         this.descricao = descricao;
         this.avaliacao = avaliacao;
-        this.Cafe = Cafe;
+        this.imgCafe = imgCafe;
     }
 
     public String getTitulo() {
@@ -39,10 +39,10 @@ public class Donuts {
     public void setAvaliacao(String avaliacao) {this.avaliacao = avaliacao;}
 
     public int getImgCafe() {
-        return Cafe;
+        return imgCafe;
     }
 
     public void setImgCafe(int imgCafe) {
-        this.Cafe = imgCafe;
+        this.imgCafe = imgCafe;
     }
 }
