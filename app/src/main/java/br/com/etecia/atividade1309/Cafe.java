@@ -3,6 +3,7 @@ package br.com.etecia.atividade1309;
 public class Cafe {
     private String titulo;
     private String descricao;
+    private String avaliacao;
     private int Cafe;
 
 
@@ -10,9 +11,10 @@ public class Cafe {
 
     }
 
-    public Cafe(String titulo,String descricao,int Cafe){
+    public Cafe(String titulo,String descricao,String avalicao,int Cafe){
         this.titulo = titulo;
         this.descricao = descricao;
+        this.avaliacao = avalicao;
         this.Cafe = Cafe;
     }
 
@@ -31,6 +33,10 @@ public class Cafe {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public String getAvaliacao() {return avaliacao;}
+
+    public void setAvaliacao(String avaliacao) {this.avaliacao = avaliacao;}
 
     public int getImgCafe() {
         return Cafe;

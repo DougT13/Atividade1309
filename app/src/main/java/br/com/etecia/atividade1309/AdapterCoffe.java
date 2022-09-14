@@ -44,6 +44,7 @@ public class AdapterCoffe extends RecyclerView.Adapter<AdapterCoffe.ViewHolder>
     {
         holder.descricao.setText(cafe.get(position).getDescricao());
         holder.titulo.setText(cafe.get(position).getTitulo());
+        holder.avaliacao.setText(cafe.get(position).getAvaliacao());
         holder.imgCafe.setImageResource(cafe.get(position).getImgCafe());
 
         holder.idCardCafe.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +63,7 @@ public class AdapterCoffe extends RecyclerView.Adapter<AdapterCoffe.ViewHolder>
     public class ViewHolder extends RecyclerView.ViewHolder
     {
         CardView idCardCafe;
-        TextView descricao, titulo;
+        TextView descricao, titulo, avaliacao;
         ImageView imgCafe;
 
         public ViewHolder(@NonNull View itemView) {
@@ -70,6 +71,7 @@ public class AdapterCoffe extends RecyclerView.Adapter<AdapterCoffe.ViewHolder>
             idCardCafe = itemView.findViewById(R.id.idCardCafe);
             descricao = itemView.findViewById(R.id.txtDescrever);
             titulo = itemView.findViewById(R.id.txtCafe);
+            avaliacao = itemView.findViewById(R.id.txtRating);
             imgCafe = itemView.findViewById(R.id.imgCafe);
         }
     }

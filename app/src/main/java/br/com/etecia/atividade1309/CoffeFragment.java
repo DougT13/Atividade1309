@@ -31,11 +31,11 @@ public class CoffeFragment extends Fragment {
 
         cafe = new ArrayList<>();
 
-        cafe.add(new Cafe("Café Expresso", "Um ótimo café", R.drawable.cafeexpresso));
-        cafe.add(new Cafe("Café Americano", "Um café bem americanizado", R.drawable.cafeamericano));
-        cafe.add(new Cafe("Café Breve", "Um café rápido", R.drawable.cafebreve));
-        cafe.add(new Cafe("Café com Leite", "Um café tradicional (mas com leite)", R.drawable.cafecomleite));
-        cafe.add(new Cafe("Café Irlandês", "Um café gringo", R.drawable.cafeirlandes));
+        cafe.add(new Cafe("Café Expresso", "Um ótimo café", "10.0" ,R.drawable.cafeexpresso));
+        cafe.add(new Cafe("Café Americano", "Um café bem americanizado", "10.0" ,R.drawable.cafeamericano));
+        cafe.add(new Cafe("Café Breve", "Um café rápido", "10.0" ,R.drawable.cafebreve));
+        cafe.add(new Cafe("Café com Leite", "Um café tradicional (mas com leite)", "10.0" ,R.drawable.cafecomleite));
+        cafe.add(new Cafe("Café Irlandês", "Um café gringo", "10.0" ,R.drawable.cafeirlandes));
 
         AdapterCoffe adapterCoffe = new AdapterCoffe(getContext(), cafe);
 

@@ -3,6 +3,7 @@ package br.com.etecia.atividade1309;
 public class Donuts {
     private String titulo;
     private String descricao;
+    private String avaliacao;
     private int Cafe;
 
 
@@ -10,9 +11,10 @@ public class Donuts {
 
     }
 
-    public Donuts(String titulo,String descricao,int Cafe){
+    public Donuts(String titulo,String descricao, String avaliacao,int Cafe){
         this.titulo = titulo;
         this.descricao = descricao;
+        this.avaliacao = avaliacao;
         this.Cafe = Cafe;
     }
 
@@ -31,6 +33,10 @@ public class Donuts {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public String getAvaliacao() {return avaliacao;}
+
+    public void setAvaliacao(String avaliacao) {this.avaliacao = avaliacao;}
 
     public int getImgCafe() {
         return Cafe;
