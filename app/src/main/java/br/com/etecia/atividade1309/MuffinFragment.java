@@ -15,7 +15,7 @@ import java.util.List;
 
 public class MuffinFragment extends Fragment {
 
-    RecyclerView listaCoffe;
+    RecyclerView listaMuffin;
 
     List<Muffin> muffin;
 
@@ -25,7 +25,7 @@ public class MuffinFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_muffin, container, false);
 
-        listaCoffe = view.findViewById(R.id.idRecyclerViewMuffin);
+        listaMuffin = view.findViewById(R.id.idRecyclerViewMuffin);
 
         muffin = new ArrayList<>();
 
@@ -37,11 +37,11 @@ public class MuffinFragment extends Fragment {
 
         AdapterMuffin adapterMuffin = new AdapterMuffin(getContext(), muffin);
 
-        listaCoffe.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        listaMuffin.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
-        listaCoffe.hasFixedSize();
+        listaMuffin.hasFixedSize();
 
-        listaCoffe.setAdapter(adapterMuffin);
+        listaMuffin.setAdapter(adapterMuffin);
 
 
         return view;

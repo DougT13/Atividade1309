@@ -29,11 +29,11 @@ public class DonutsFragment extends Fragment {
 
         donuts = new ArrayList<>();
 
-        donuts.add(new Donuts("Café Expresso", "Um ótimo café", "10.0",R.drawable.donuthomer));
-        donuts.add(new Donuts("Café Americano", "Um café bem americanizado", "07.5",R.drawable.donutsglazed));
-        donuts.add(new Donuts("Café Breve", "Um café rápido", "10.0",R.drawable.donutnutella));
-        donuts.add(new Donuts("Café com Leite", "Um café tradicional (mas com leite)", "10.0",R.drawable.donutskitkat));
-        donuts.add(new Donuts("Café Irlandês", "Um café gringo", "09.0",R.drawable.donutmaracuja));
+        donuts.add(new Donuts("Donut Homer", "igual da série dos simpsons", "10.0",R.drawable.donuthomer));
+        donuts.add(new Donuts("Donut Glazed", "é gostoso po kkkkk", "07.5",R.drawable.donutsglazed));
+        donuts.add(new Donuts("Donut Nutella", "recheado com nutella", "10.0",R.drawable.donutnutella));
+        donuts.add(new Donuts("Donut KitKat", "tem kitkats", "10.0",R.drawable.donutskitkat));
+        donuts.add(new Donuts("Donut Maracujá", "dá sono depois do consumo", "09.0",R.drawable.donutmaracuja));
 
         AdapterDonuts adapterDonuts = new AdapterDonuts(getContext(), donuts);
 
