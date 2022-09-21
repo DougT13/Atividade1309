@@ -2,10 +2,13 @@ package br.com.etecia.atividade1309;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.google.android.filament.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -30,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                switch (item.getItemId())
-                {
+                switch (item.getItemId()) {
                     case R.id.ic_coffe:
                         getSupportFragmentManager().beginTransaction().replace(R.id.FrameContainer, coffeFragment).commit();
                         return true;
@@ -52,5 +54,12 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+    }
+
+    public void nextTela(Fragment fragment)
+    {
+        getSupportFragmentManager().beginTransaction().replace(R.id.FrameContainer, fragment).commit();
+
     }
 }
