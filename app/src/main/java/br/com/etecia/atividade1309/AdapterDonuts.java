@@ -1,6 +1,7 @@
 package br.com.etecia.atividade1309;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,7 +51,14 @@ public class AdapterDonuts extends RecyclerView.Adapter<AdapterDonuts.ViewHolder
         holder.idCardCafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Click ativo", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(context, ClickActivity.class);
+
+                intent.putExtra("Titulo", donuts.get(position).getTitulo());
+                intent.putExtra("Descricao", donuts.get(position).getDescricao());
+                intent.putExtra("avaliacao", donuts.get(position).getAvaliacao());
+                intent.putExtra("Miniatura", donuts.get(position).getImgCafe());
+
+                context.startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
             }
         });
     }
